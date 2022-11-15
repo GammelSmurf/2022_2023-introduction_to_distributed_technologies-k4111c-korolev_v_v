@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lab1-vault-pod
+  labels:
+    app: lab1-vault
+spec:
+  containers:
+    - name: lab1-vault-container
+      image: vault
+      resources:
+        limits:
+          memory: "1Gi"
+        requests:
+          memory: "500Mi"
