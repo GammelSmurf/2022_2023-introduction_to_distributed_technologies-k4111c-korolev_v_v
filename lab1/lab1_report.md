@@ -1,6 +1,6 @@
 **Lab1: Install Docker and minikube. My first manifest.**
 
-After installing a minikube it was start by *minikube start*, so the cluster was raised.
+After installing a minikube it was started by *minikube start*, so the cluster was raised.
 ![img_1.png](assets/img_1.png)
 Then a manifest file *vault_pod_manifest.yaml* was created with following content to describe new pod *lab1-vault-pod*.
 ```aidl
