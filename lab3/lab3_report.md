@@ -67,15 +67,19 @@ spec:
 ```
 
 Then these manifest was applied and checked in minikube.
+
 ![img.png](assets/img.png)
 
 Using *kubectl exec* it was connected to pod and shown its env variables. So we can see that variables from config map was added correctly.
+
 ![img_1.png](assets/img_1.png)
 
 Using *OpenSSL* the new rsa key was created.
+
 ![img_2.png](assets/img_2.png)
 
 Then the new certificate based on rsa key was created. The FQDN for common name is **vladislav.korolev.com**.
+
 ![img_5.png](assets/img_5.png)
 
 Then the new secret with key and certificate was created (lab3-secret).
@@ -86,6 +90,7 @@ kubectl create secret tls lab3-secret \
 ```
 
 The secret was checked in minikube:
+
 ![img_4.png](assets/img_4.png)
 
 The new service for replicaset was created (lab3-service). It listens 9090 port and forwards to 3000.
@@ -136,13 +141,17 @@ spec:
 ```
 
 Then the DNS was configured in file hosts on local host - the new record was added with ip-address of ingress and FQDN, that specified in tls certificate.
+
 ![img_3.png](assets/img_3.png)
 
 As a result the web page was opened in browser by FQDN name, that was configured - **vladislav.korolev.com**.
+
 ![img_7.png](assets/img_7.png)
 
 The created and configured TLS certificate is also active.
+
 ![img_6.png](assets/img_6.png)
 
 The schema:
+
 ![img_8.png](assets/img_8.png)
