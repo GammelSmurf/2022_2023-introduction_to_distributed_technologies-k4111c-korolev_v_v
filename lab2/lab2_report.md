@@ -1,3 +1,21 @@
+University: [ITMO University](https://itmo.ru/ru/)
+
+Faculty: [FICT](https://fict.itmo.ru)
+
+Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
+
+Year: 2022/2023
+
+Group: K4111с
+
+Author: Korolev Vladislav Vadimovich
+
+Lab: Lab2
+
+Date of create: 20.09.2022
+
+Date of finished: 17.11.2022
+
 ### Lab2: Deployment of web service in minikube. Access to web interface of service. Monitoring of service.
 
 Minikube was started and manifest of new deployment was applied.
@@ -49,5 +67,8 @@ Then local port 9090 was forwarded to a service same port 9090 to get access fro
 The application was opened in browser by *localhost:9090*. The values of transferred env variables are displayed on the page. 
 ![img_4.png](assets/img_4.png)
 
-The logs of container was checked in dashboard.
+The logs of container were checked in dashboard.
 ![img_5.png](assets/img_5.png)
+
+The schema:
+![img_6.png](assets/img_6.png)
